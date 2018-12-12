@@ -51,12 +51,7 @@
       </plugin>
     </plugins>
   </reporting>
-	<distributionManagement>
-    <repository>
-      <id>nexus</id>
-      <name>Releases</name>
-      <url>http://localhost:8081/repository/maven-releases</url>
-    </repository>
+
     <distributionManagement>
     <repository>
       <id>nexus</id>
@@ -69,5 +64,5 @@
       <url>http://localhost:8081/repository/maven-snapshots</url>
     </snapshotRepository>
   </distributionManagement>
-  </distributionManagement>
+ 
 </project>
