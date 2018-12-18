@@ -9,10 +9,13 @@ pipeline {
       steps {
        bat 'mvn compiler:compile'
        bat 'mvn install'
+         bat 'mvn site'
+         bat 'mvn cobertura:cobertura'
        }
        post {
        success {
        junit 'target/surefire-reports/**/*.xml'
+       coberturaReportFile: '**/coverage.xml'
        }
        }
        }
