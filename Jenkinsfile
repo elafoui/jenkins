@@ -15,7 +15,7 @@ pipeline {
        post {
        success {
        junit 'target/surefire-reports/**/*.xml'
-       coberturaReportFile '**/coverage.xml'
+       coberturaReportFile '**/target/site/cobertura/coverage.xml'
        }
        }
        }
