@@ -14,6 +14,12 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+	   <dependency>
+      <groupId>io.gatling.highcharts</groupId>
+      <artifactId>gatling-charts-highcharts</artifactId>
+      <version>${gatling.version}</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
   <build>
 <plugins>
