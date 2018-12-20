@@ -11,6 +11,7 @@ pipeline {
        bat 'mvn install'
          bat 'mvn site'
          bat 'mvn cobertura:cobertura'
+         bat 'mvn gatling:test'
        }
        post {
        success {
